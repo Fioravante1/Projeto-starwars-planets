@@ -17,7 +17,7 @@ function ContentsTable() {
   const { filterByName: { name } } = filters;
 
   const filterNamePlanets = (name !== '')
-    ? data.filter((itemValue) => itemValue.name.toLocaleLowerCase()
+    ? data.filter((itemValue) => itemValue.name
       .includes(name.toLocaleLowerCase()))
     : data;
 
